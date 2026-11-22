@@ -171,6 +171,87 @@ def training(page):
     return out
 
 
+MONTHS = {"Ocak": 1, "Şubat": 2, "Mart": 3, "Nisan": 4, "Mayıs": 5, "Haziran": 6, "Temmuz": 7,
+          "Ağustos": 8, "Eylül": 9, "Ekim": 10, "Kasım": 11, "Aralık": 12}
+
+
+def tr_date(s):
+    """'17 Haziran 2021' / 'Eylül 2026' / '2021' -> ('2021-06-17', '17 June 2021')."""
+    m = re.search(r"(?:(\d{1,2})\s+)?(?:(" + "|".join(MONTHS) + r")\s+)?(\d{4})", s or "")
+    if not m:
+        return "", ""
+    day, month, year = m.groups()
+    iso = year + (f"-{MONTHS[month]:02d}" if month else "") + (f"-{int(day):02d}" if month and day else "")
+    text = " ".join(p for p in (day, en_word(month) if month else "", year) if p)
+    return iso, text
+
+
+def fix_caps(name):
+    """'ORHAN ÇAKIR' -> 'Orhan Çakır', 'ATAÇ M.' -> 'Ataç M.' (Turkish dotted/dotless i aware)."""
+    def word(w):
+        if len(w) < 3 or not w.isupper():
+            return w
+        return w[0] + w[1:].replace("I", "ı").replace("İ", "i").lower()
+    return " ".join(word(w) for w in name.split())
+
+
+def en_event(s):
+    s = norm(s)
+    return TR.get("events", {}).get(s, s)
+
+
+def invited_talks(page):
+    block = section(page, "Davetli Konuşmalar")
+    out = []
+    for li in re.findall(r"<li>(.*?)</li>", block, re.S):
+        h3 = re.search(r'<h3 class="title">(.*?)</h3>', li, re.S)
+        if not h3:
+            continue
+        when = text((re.search(r'shaded-label">(.*?)</span>', h3.group(1), re.S) or [None, ""])[1])
+        name = text(re.sub(r'<span class="shaded-label">.*?</span>', "", h3.group(1), flags=re.S))
+        ps = [text(p) for p in re.findall(r"<p>(.*?)</p>", li, re.S)]
+        kind = en_word(ps[0]) if ps else ""
+        venue = ", ".join(en_event(x.strip()) for x in ps[1].split(",")) if len(ps) > 1 else ""
+        iso, when_en = tr_date(when)
+        title = en_title(name)
+        out.append({"title": title or name, "title_tr": name if title else "", "type": kind,
+                    "venue": venue, "date": iso, "date_text": when_en})
+    return out
+
+
+def presentations(page):
+    block = section(page, "Hakemli Bilimsel Toplantılarda Yayımlanmış Bildiriler")
+    out = []
+    for item in re.split(r'<div class="pub-item', block)[1:]:
+        link = re.search(r'href="(/yayin/[^"]+)"', item)
+        name = text((re.search(r"<strong>(.*?)</strong>", item, re.S) or [None, ""])[1])
+        cits = re.findall(r'<div class="citation"[^>]*>(.*?)</div>', item, re.S)
+        authors = []
+        if cits:
+            for attrs, short in re.findall(r"<a class='authorsRichText'([^>]*)>([^<]*)</a>", cits[0]):
+                full = re.search(r"title ='([^']+)'", attrs)
+                short = short.strip()
+                if is_me(short):
+                    authors.append({"name": "Kaplan A.", "me": True})
+                else:
+                    authors.append({"name": fix_caps(full.group(1) if full else short), "me": False})
+        info = text(re.sub(r"<span.*?</span>", "", cits[1], flags=re.S)) if len(cits) > 1 else ""
+        ext = re.search(r'<a href="(https?://[^"]+)"[^>]*class="link-with-icon"', cits[1] if len(cits) > 1 else "")
+        fmt = re.search(r"\(([^)]+)\)\s*$", info)
+        parts = [p.strip() for p in re.sub(r",?\s*\([^)]+\)\s*$", "", info).split(",") if p.strip()]
+        iso, when_en = tr_date(parts[-1] if parts else "")
+        if when_en:
+            parts = parts[:-1]
+        event = en_event(parts[0]) if parts else ""
+        place = ", ".join(parts[1:])
+        title = en_title(name)
+        out.append({"title": title or name, "title_tr": name if title else "", "authors": authors,
+                    "event": event, "place": place, "date": iso, "date_text": when_en,
+                    "format": en_word(fmt.group(1)) if fmt else "",
+                    "url": ext.group(1) if ext else (BASE + link.group(1) if link else "")})
+    return out
+
+
 def save(name, data):
     path = os.path.join(CONTENT, name)
     with open(path, "w", encoding="utf-8") as f:
@@ -182,6 +263,7 @@ def main():
     try:
         proj_page, exp_page = get(f"{AVESIS}/projeler"), get(f"{AVESIS}/deneyim")
         p, c, t = projects(proj_page), courses(exp_page), training(exp_page)
+        talks, pres = invited_talks(get(f"{AVESIS}/basarilar")), presentations(get(f"{AVESIS}/yayinlar"))
     except Exception as e:  # network or layout problem: keep what we have
         print(f"::warning::Avesis could not be read ({e}); keeping the existing projects and teaching files.")
         return
@@ -191,7 +273,9 @@ def main():
     save("projects.json", {"source": f"{AVESIS}/projeler", "projects": p})
     save("teaching.json", {"source": f"{AVESIS}/deneyim", "institution": CONFIG.get("institution", ""),
                            "courses": c, "training": t})
-    print(f"  {len(p)} projects, {len(c)} courses, {len(t)} training programmes")
+    save("talks.json", {"source": f"{AVESIS}/basarilar", "invited": talks, "presentations": pres})
+    print(f"  {len(p)} projects, {len(c)} courses, {len(t)} training programmes, "
+          f"{len(talks)} invited talks, {len(pres)} conference presentations")
     for m in dict.fromkeys(missing):
         print(f"::notice::Needs an English entry in content/translations.json -> {m}")
 

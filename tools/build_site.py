@@ -214,6 +214,8 @@ from datetime import date
 
 PROJECTS_FILE = os.path.join(ROOT, "content", "projects.json")
 PROJECTS = (json.load(open(PROJECTS_FILE, encoding="utf-8")) if os.path.exists(PROJECTS_FILE) else {}).get("projects", [])
+TALKS_FILE = os.path.join(ROOT, "content", "talks.json")
+TALKS = json.load(open(TALKS_FILE, encoding="utf-8")) if os.path.exists(TALKS_FILE) else {}
 THIS_YEAR = int((PUBS.get("updated") or date.today().isoformat())[:4])
 SCHOLAR = PUBS.get("scholar") or {}
 
@@ -249,6 +251,8 @@ def metrics(year=None):
     projects = [p for p in PROJECTS if year is None or project_active(p, year)]
     people = {person_key(a["name"]) for w in works for a in w["authors"]}
     people |= {person_key(n) for p in projects for n in p.get("team", [])}
+    people |= {person_key(a["name"]) for t in TALKS.get("presentations") or []
+               if year is None or str(t.get("date", "")).startswith(str(year)) for a in t.get("authors", [])}
     people -= MY_KEYS | {""}
     if year is None:
         cites = SCHOLAR.get("citations") or sum(cite_count(w) for w in PUBS["works"])
@@ -654,6 +658,37 @@ def teaching_section():
     return stats + f'<section class="list">{"".join(out)}</section>'
 
 
+def talks_section():
+    invited, pres = TALKS.get("invited") or [], TALKS.get("presentations") or []
+    if not invited and not pres:
+        return None
+
+    def card(t, meta, extra=""):
+        url = t.get("url")
+        title = E(t["title"])
+        title = f'<a href="{E(url)}" rel="noopener">{title}</a>' if url else title
+        badge = f'<span class="badge">{E(t["type"])}</span>' if t.get("type") else ""
+        return (f'<article class="item"><h2>{title}{badge}</h2>'
+                + (f'<p class="alt-title" lang="tr">{E(t["title_tr"])}</p>' if t.get("title_tr") else "")
+                + extra + f'<p class="meta">{" · ".join(E(m) for m in meta if m)}</p></article>')
+
+    out = []
+    if invited:
+        out.append('<h3 class="year">Invited talks</h3>')
+        out += [card(t, [t.get("venue"), t.get("date_text")])
+                for t in sorted(invited, key=lambda t: t.get("date", ""), reverse=True)]
+    if pres:
+        out.append('<h3 class="year">Conference presentations</h3>')
+        for t in sorted(pres, key=lambda t: t.get("date", ""), reverse=True):
+            authors = f'<p class="meta">{authors_html(t["authors"])}</p>' if t.get("authors") else ""
+            out.append(card(t, [t.get("event"), t.get("place"), t.get("date_text"), t.get("format")], authors))
+    stats = (f'<div class="stats">'
+             + (f'<span><b>{len(invited)}</b>invited talk{"s" if len(invited) != 1 else ""}</span>' if invited else "")
+             + (f'<span><b>{len(pres)}</b>conference presentation{"s" if len(pres) != 1 else ""}</span>' if pres else "")
+             + "</div>")
+    return stats + f'<section class="list">{"".join(out)}</section>'
+
+
 def project_section():
     if not PROJECTS:
         return None
@@ -679,6 +714,8 @@ pages = {}
 for key, slug, title, building, color, polys, lead in SECTIONS:
     if key in ("research", "books"):
         content, page_js = pub_section(key)
+    elif key == "talks":
+        content, page_js = talks_section(), ""
     elif key == "teaching":
         content, page_js = teaching_section(), ""
     elif key == "projects":

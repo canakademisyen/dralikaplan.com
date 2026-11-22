@@ -1,0 +1,63 @@
+{
+  "source": "https://avesis.comu.edu.tr/alikaplan/basarilar",
+  "invited": [
+    {
+      "title": "Technology and Artificial Intelligence in Health Sciences",
+      "title_tr": "Sağlık Bilimlerinde Teknoloji ve Yapay Zekâ",
+      "type": "Seminar",
+      "venue": "Akdeniz University, Türkiye",
+      "date": "2026-09",
+      "date_text": "September 2026"
+    }
+  ],
+  "presentations": [
+    {
+      "title": "Evaluating Social Media Use in Nursing from an E-Professionalism Perspective",
+      "title_tr": "Hemşirelikte Sosyal Medya Kullanımının E-Profesyonellik Yönünden Değerlendirilmesi",
+      "authors": [
+        {
+          "name": "Kaplan A.",
+          "me": true
+        },
+        {
+          "name": "Orhan Çakır",
+          "me": false
+        },
+        {
+          "name": "Ataç M.",
+          "me": false
+        }
+      ],
+      "event": "International Eurasian Congress of Health Sciences",
+      "place": "Trabzon, Türkiye",
+      "date": "2021-06-17",
+      "date_text": "17 June 2021",
+      "format": "Abstract",
+      "url": "https://avrasya.edu.tr/blog/2021/09/10/1-uluslararasi-avrasya-saglik-bilimleri-kongresi-bildiri-ozet-ve-tam-metin-kitapcigi/"
+    },
+    {
+      "title": "The Relationship Between Need for Cognitive Closure and Individual Innovativeness: A Sample of Intensive Care Nurses",
+      "title_tr": "Bilişsel Kapalılık İhtiyacı ile Bireysel Yenilikçilik Arasındaki İlişki: Yoğun Bakım Ünitelerinde Çalışan Hemşire Örneklemi",
+      "authors": [
+        {
+          "name": "Kaplan A.",
+          "me": true
+        },
+        {
+          "name": "Ataç M.",
+          "me": false
+        },
+        {
+          "name": "Alan H.",
+          "me": false
+        }
+      ],
+      "event": "1st National Congress of Nursing Management",
+      "place": "Türkiye",
+      "date": "2021-05-27",
+      "date_text": "27 May 2021",
+      "format": "Abstract",
+      "url": "https://avesis.comu.edu.tr/yayin/2cea3cb1-da55-4190-9ef4-520ce14c1699/bilissel-kapalilik-ihtiyaci-ile-bireysel-yenilikcilik-arasindaki-iliski-yogun-bakim-unitelerinde-calisan-hemsire-orneklemi"
+    }
+  ]
+}
