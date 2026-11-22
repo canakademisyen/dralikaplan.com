@@ -1,0 +1,58 @@
+{
+  "source": "https://avesis.comu.edu.tr/alikaplan/deneyim",
+  "institution": "Çanakkale Onsekiz Mart University",
+  "courses": [
+    {
+      "level": "graduate",
+      "title": "Biostatistics and Decision-Making Methods",
+      "title_tr": "Biyoistatistik ve Karar Verme Yöntemleri",
+      "code": "SE-5012",
+      "type": "Elective",
+      "language": "Turkish",
+      "terms": [
+        "2025–2026 Spring"
+      ]
+    },
+    {
+      "level": "undergraduate",
+      "title": "Quality Management in Healthcare Institutions",
+      "title_tr": "Sağlık Kurumlarında Kalite Yönetimi",
+      "code": "SYÖ-4003",
+      "type": "Compulsory",
+      "language": "Turkish",
+      "terms": [
+        "2026–2027 Fall"
+      ]
+    },
+    {
+      "level": "undergraduate",
+      "title": "Productivity and Performance Management in Healthcare Organisations",
+      "title_tr": "Sağlık İşletmelerinde Verimlilik ve Performans Yönetimi",
+      "code": "SYÖ-4025",
+      "type": "Elective",
+      "language": "Turkish",
+      "terms": [
+        "2026–2027 Fall"
+      ]
+    },
+    {
+      "level": "undergraduate",
+      "title": "Lean Healthcare and Its Techniques",
+      "title_tr": "Yalın Sağlık ve Teknikleri",
+      "code": "SEÇ-0203",
+      "type": "Elective",
+      "language": "Turkish",
+      "terms": [
+        "2025–2026 Spring"
+      ]
+    }
+  ],
+  "training": [
+    {
+      "title": "Intensive Care Nursing Certificate Programme",
+      "title_tr": "Yoğun Bakım Hemşireliği Sertifikalı Eğitim Programı",
+      "organiser": "Application and Research Centre, certificate programme",
+      "years": "2022–2023"
+    }
+  ]
+}

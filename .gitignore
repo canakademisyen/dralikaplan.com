@@ -1,0 +1,11 @@
+# Never commit the SerpApi key (it lives in GitHub Secrets instead)
+content/secrets.json
+
+# Built site: GitHub Actions builds it fresh
+dist/
+
+# Local tools and system files
+.claude/
+.DS_Store
+__pycache__/
+*.pyc

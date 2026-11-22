@@ -1,0 +1,463 @@
+{
+ "updated": "2026-11-22",
+ "orcid": "0000-0002-6019-6178",
+ "works": [
+  {
+   "title": "Technology-integrated organizational strategies for preventing workplace violence against nurses: A scoping review",
+   "authors": [
+    {
+     "name": "Ali Kaplan",
+     "me": true
+    },
+    {
+     "name": "Ece Alagöz",
+     "me": false
+    },
+    {
+     "name": "Elif Nur Demirci",
+     "me": false
+    }
+   ],
+   "venue": "Health Sciences Quarterly",
+   "year": 2026,
+   "date": "2026-10-20",
+   "type": "article",
+   "doi": "10.26900/hsq.3264",
+   "volume": "6",
+   "issue": "4",
+   "pages": "939-956",
+   "oa_url": "https://journals.gen.tr/index.php/jsp/article/download/3264/2210",
+   "citations": 0,
+   "citations_by_year": {},
+   "keywords": [
+    "nurses",
+    "workplace violence",
+    "machine learning risk prediction",
+    "artificial intelligence",
+    "technology-based interventions",
+    "violence prevention",
+    "alarm fatigue",
+    "natural language processing",
+    "organizational strategy",
+    "electronic health records",
+    "online learning",
+    "emergency department",
+    "safety culture",
+    "violence surveillance",
+    "incident reporting"
+   ],
+   "source": "openalex",
+   "openalex_id": "https://openalex.org/W7223670304",
+   "section": "research",
+   "scholar_citations": 0,
+   "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=CrA7_KcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=CrA7_KcAAAAJ:HbR8gkJAVGIC"
+  },
+  {
+   "title": "Leadership research in nursing (2000–2024): a bibliometric analysis of global trends and thematic evolution",
+   "authors": [
+    {
+     "name": "Ali Kaplan",
+     "me": true
+    },
+    {
+     "name": "Damla Gökalp",
+     "me": false
+    }
+   ],
+   "venue": "Leadership in health services",
+   "year": 2026,
+   "date": "2026-09-14",
+   "type": "article",
+   "doi": "10.1108/lhs-02-2026-0041",
+   "volume": "39",
+   "issue": "4",
+   "pages": "550-563",
+   "oa_url": "https://doi.org/10.2139/ssrn.6071999",
+   "citations": 1,
+   "citations_by_year": {
+    "2026": 1
+   },
+   "keywords": [
+    "authentic leadership",
+    "nursing leadership",
+    "supportive supervision",
+    "transformational leadership",
+    "turnover intention",
+    "ethical decision-making",
+    "burnout",
+    "nurse well-being",
+    "research trends",
+    "international research collaboration",
+    "nursing leadership education",
+    "nurse retention",
+    "quality of care",
+    "relational communication",
+    "nursing management"
+   ],
+   "source": "openalex",
+   "openalex_id": "https://openalex.org/W7125751915",
+   "section": "research",
+   "scholar_citations": 2,
+   "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=CrA7_KcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=CrA7_KcAAAAJ:SpbeaW3--B0C"
+  },
+  {
+   "title": "When Nursing Care Turns Violent: A Qualitative Content Analysis of Nurses’ Workplace Violence Experiences in Turkey",
+   "authors": [
+    {
+     "name": "Ali Kaplan",
+     "me": true
+    },
+    {
+     "name": "Merve Ataç",
+     "me": false
+    }
+   ],
+   "venue": "Research Square",
+   "year": 2026,
+   "date": "2026-06-17",
+   "type": "preprint",
+   "doi": "10.21203/rs.3.rs-9631281/v1",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "oa_url": "https://www.researchsquare.com/article/rs-9631281/latest.pdf",
+   "citations": 0,
+   "citations_by_year": {},
+   "keywords": [
+    "nurses",
+    "workplace violence",
+    "de-escalation",
+    "Turkey",
+    "professional identity",
+    "communication breakdown",
+    "psychological well-being",
+    "coping strategies",
+    "violence against nurses",
+    "harassment",
+    "disrespect"
+   ],
+   "source": "openalex",
+   "openalex_id": "https://openalex.org/W7165053580",
+   "section": "research"
+  },
+  {
+   "title": "Turkey in Lean Healthcare: Examples and a Vision for the Future",
+   "authors": [
+    {
+     "name": "Özge Uysal Şahin",
+     "me": false
+    },
+    {
+     "name": "Ali Kaplan",
+     "me": true
+    }
+   ],
+   "venue": "Holistence Publications",
+   "year": 2026,
+   "date": "2026-05-31",
+   "type": "edited-book",
+   "doi": "10.55094/holistence.599",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "oa_url": "",
+   "citations": 0,
+   "keywords": [],
+   "editors": true,
+   "source": "crossref",
+   "alt_title": "Yalın Sağlıkta Türkiye: Örnekler ve Gelecek Vizyonu",
+   "section": "books"
+  },
+  {
+   "title": "Hemşirelerin Sosyal Baskınlık Yönelimleri ve Örgütsel Güvenle İlişkisi",
+   "authors": [
+    {
+     "name": "Ali Kaplan",
+     "me": true
+    },
+    {
+     "name": "Adalet Kutlu",
+     "me": false
+    }
+   ],
+   "venue": "Hemşirelik Bilimi Dergisi",
+   "year": 2025,
+   "date": "2025-08-22",
+   "type": "article",
+   "doi": "10.54189/hbd.1532813",
+   "volume": "8",
+   "issue": "2",
+   "pages": "166-176",
+   "oa_url": "https://dergipark.org.tr/tr/download/article-file/4143175",
+   "citations": 0,
+   "citations_by_year": {},
+   "keywords": [
+    "organizational trust",
+    "nurses",
+    "social dominance orientation",
+    "trust in management",
+    "trust in colleagues"
+   ],
+   "source": "openalex",
+   "openalex_id": "https://openalex.org/W4413419058",
+   "section": "research",
+   "scholar_citations": 0,
+   "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=CrA7_KcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=CrA7_KcAAAAJ:WZBGuue-350C"
+  },
+  {
+   "title": "Violence Against Healthcare Professionals: A Retrospective Review of a University Hospital in Turkey",
+   "authors": [
+    {
+     "name": "Ali Kaplan",
+     "me": true
+    },
+    {
+     "name": "Merve Ataç",
+     "me": false
+    }
+   ],
+   "venue": "SDÜ Tıp Fakültesi Dergisi",
+   "year": 2025,
+   "date": "2025-03-27",
+   "type": "article",
+   "doi": "10.17343/sdutfd.1504243",
+   "volume": "32",
+   "issue": "1",
+   "pages": "11-19",
+   "oa_url": "https://dergipark.org.tr/en/download/article-file/4018707",
+   "citations": 3,
+   "citations_by_year": {
+    "2026": 3
+   },
+   "keywords": [
+    "workplace violence",
+    "verbal aggression",
+    "healthcare workers",
+    "gender norms",
+    "post-pandemic",
+    "relatives of patients",
+    "perpetrator behavior",
+    "outpatient clinics",
+    "physicians"
+   ],
+   "source": "openalex",
+   "openalex_id": "https://openalex.org/W4414816517",
+   "section": "research",
+   "scholar_citations": 3,
+   "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=CrA7_KcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=CrA7_KcAAAAJ:oNZyr7d5Mn4C"
+  },
+  {
+   "title": "Relationship between disaster preparedness perception, self‐efficacy, and psychological capital among Turkish nurses",
+   "authors": [
+    {
+     "name": "Merve Ataç",
+     "me": false
+    },
+    {
+     "name": "Dilek Avcı",
+     "me": false
+    },
+    {
+     "name": "Ali Kaplan",
+     "me": true
+    }
+   ],
+   "venue": "International Nursing Review",
+   "year": 2025,
+   "date": "2025-01-27",
+   "type": "article",
+   "doi": "10.1111/inr.13097",
+   "volume": "72",
+   "issue": "1",
+   "pages": "e13097",
+   "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/inr.13097",
+   "citations": 13,
+   "citations_by_year": {
+    "2026": 10,
+    "2025": 3
+   },
+   "keywords": [
+    "psychological capital",
+    "self-efficacy",
+    "disaster exposure",
+    "disaster preparedness",
+    "disaster response training",
+    "disaster management",
+    "nurses",
+    "Turkish nurses",
+    "nursing education"
+   ],
+   "source": "openalex",
+   "openalex_id": "https://openalex.org/W4406870486",
+   "section": "research",
+   "scholar_citations": 17,
+   "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=CrA7_KcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=CrA7_KcAAAAJ:M7yex6snE4oC"
+  },
+  {
+   "title": "E-Profesyonelizm Kavramı ve Hemşireliğe Yansımaları",
+   "authors": [],
+   "venue": "Değişen Dünyada Hemşirelik Bilimine Çok Yönlü Yaklaşımlar",
+   "year": 2021,
+   "date": "2021-09-28",
+   "type": "book-chapter",
+   "doi": "",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "oa_url": "https://www.researchgate.net/publication/358462176_E-Profesyonelizm_Kavrami_ve_Hemsirelige_Yansimalari",
+   "citations": 0,
+   "keywords": [],
+   "source": "orcid",
+   "section": "books"
+  },
+  {
+   "title": "How Were Experiences of Stoma for Nursing Students?",
+   "authors": [
+    {
+     "name": "Fatma Vural",
+     "me": false
+    },
+    {
+     "name": "Aylin Durmaz Edeer",
+     "me": false
+    },
+    {
+     "name": "Kübra Yasak",
+     "me": false
+    },
+    {
+     "name": "Ali Kaplan",
+     "me": true
+    },
+    {
+     "name": "Türkan Özbayır",
+     "me": false
+    },
+    {
+     "name": "Selda Karaveli Çakır",
+     "me": false
+    }
+   ],
+   "venue": "Turkish Journal of Colorectal Disease",
+   "year": 2021,
+   "date": "2021-05-24",
+   "type": "article",
+   "doi": "10.4274/tjcd.galenos.2020.2019-9-3",
+   "volume": "32",
+   "issue": "2",
+   "pages": "109-115",
+   "oa_url": "https://doi.org/10.4274/tjcd.galenos.2020.2019-9-3",
+   "citations": 2,
+   "citations_by_year": {
+    "2023": 2
+   },
+   "keywords": [
+    "body image",
+    "physical activity limitation",
+    "stoma",
+    "nursing students",
+    "stoma bag",
+    "anxiety",
+    "social activity restrictions",
+    "stoma pouching",
+    "stoma leakage",
+    "nursing education",
+    "patient experience"
+   ],
+   "source": "openalex",
+   "openalex_id": "https://openalex.org/W3164983351",
+   "section": "research",
+   "scholar_citations": 0,
+   "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=CrA7_KcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=CrA7_KcAAAAJ:xtoqd-5pKcoC"
+  },
+  {
+   "title": "COVID-19 Pandemi Sürecinde Hemşirelerin Psikolojik Etkilenmeleri ve Ruh Sağlıklarının Korunması",
+   "authors": [
+    {
+     "name": "Ataç M",
+     "me": false
+    },
+    {
+     "name": "Kaplan A",
+     "me": true
+    }
+   ],
+   "venue": "Journal of Education and Research in Nursing",
+   "year": 2021,
+   "date": "2021-04-30",
+   "type": "article",
+   "doi": "",
+   "volume": "18",
+   "issue": "Supp. 1",
+   "pages": "54-59",
+   "oa_url": "",
+   "citations": 0,
+   "keywords": [],
+   "source": "orcid",
+   "section": "research",
+   "scholar_citations": 8,
+   "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=CrA7_KcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=CrA7_KcAAAAJ:VaXvl8Fpj5cC"
+  },
+  {
+   "title": "Evaluation of Internship Training in Nursing: A Systematic Review",
+   "authors": [
+    {
+     "name": "Ali Kaplan",
+     "me": true
+    },
+    {
+     "name": "Handan Alan",
+     "me": false
+    }
+   ],
+   "venue": "Sağlık ve Hemşirelik Yönetimi Dergisi",
+   "year": 2021,
+   "date": "2021-01-01",
+   "type": "review",
+   "doi": "10.5222/shyd.2021.94557",
+   "volume": "8",
+   "issue": "2",
+   "pages": "",
+   "oa_url": "https://jag.journalagent.com/z4/download_fulltext.asp?pdir=shyd&plng=tur&un=SHYD-94557",
+   "citations": 6,
+   "citations_by_year": {
+    "2026": 1,
+    "2024": 3,
+    "2023": 1,
+    "2022": 1
+   },
+   "keywords": [
+    "nursing internship",
+    "nursing education",
+    "nurse managers",
+    "clinical practice model",
+    "school-hospital cooperation",
+    "stakeholder evaluation",
+    "student education"
+   ],
+   "source": "openalex",
+   "openalex_id": "https://openalex.org/W3194575100",
+   "section": "research",
+   "scholar_citations": 9,
+   "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=CrA7_KcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=CrA7_KcAAAAJ:SeFeTyx0c_EC"
+  }
+ ],
+ "scholar": {
+  "author_id": "CrA7_KcAAAAJ",
+  "citations": 39,
+  "citations_since": 38,
+  "since": "2021",
+  "h_index": 3,
+  "i10_index": 1,
+  "by_year": {
+   "2022": 3,
+   "2023": 6,
+   "2024": 3,
+   "2025": 8,
+   "2026": 18
+  },
+  "unmatched": [],
+  "fetched": "2026-11-22"
+ },
+ "scholar_updated": "2026-11-22"
+}

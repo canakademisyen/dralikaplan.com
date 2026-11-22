@@ -1,0 +1,31 @@
+{
+  "_help": "English text for items read from Avesis (which is in Turkish). Keys are the Turkish text exactly as on Avesis. New Avesis items without an entry here are shown in Turkish until you add one.",
+  "titles": {
+    "Birinci Basamak Sağlık Hizmetlerinde Sosyal Risk Tabanlı Müdahale Önceliklendirme Modelinin Geliştirilmesi": "Development of a Social Risk-Based Intervention Prioritisation Model in Primary Health Care",
+    "Yalın Hemşirelik Modeline Göre Sağlık Hizmetlerinde İsraf ve Hasta Güvenliği Kültürü İlişkisi: Ölçek Geliştirme ve Model Doğrulaması": "The Relationship Between Waste and Patient Safety Culture in Health Services According to the Lean Nursing Model: Scale Development and Model Validation",
+    "Sağlık Bilimlerinde Yapay Zeka Destekli Akademik Üretkenlik Atölyesi": "AI-Assisted Academic Productivity Workshop in Health Sciences",
+    "Biyoistatistik ve Karar Verme Yöntemleri": "Biostatistics and Decision-Making Methods",
+    "Sağlık Kurumlarında Kalite Yönetimi": "Quality Management in Healthcare Institutions",
+    "Sağlık İşletmelerinde Verimlilik ve Performans Yönetimi": "Productivity and Performance Management in Healthcare Organisations",
+    "Yalın Sağlık ve Teknikleri": "Lean Healthcare and Its Techniques",
+    "Yoğun Bakım Hemşireliği Sertifikalı Eğitim Programı": "Intensive Care Nursing Certificate Programme"
+  },
+  "descriptions": {
+    "Birinci Basamak Sağlık Hizmetlerinde Sosyal Risk Tabanlı Müdahale Önceliklendirme Modelinin Geliştirilmesi": "A 12-month mixed-methods study with family health centres in Çanakkale: interviews, expert weighting (AHP) and a two-round Delphi turn social-determinants screening into individual risk scores and an intervention priority matrix for policy use."
+  },
+  "funders": {
+    "TÜSEB A Grubu Acil AR-GE Projesi": "TÜSEB Group A Emergency R&D Project",
+    "TÜBİTAK Projesi, 1002 - Hızlı Destek Programı": "TÜBİTAK 1002 Rapid Support Programme",
+    "TÜBİTAK Projesi, 2237 - Proje Eğitimi Etkinliklerini Destekleme Programı": "TÜBİTAK 2237 Project Training Events Support Programme",
+    "Uygulama Araştırma Merkezi - Sertifika Programı": "Application and Research Centre, certificate programme"
+  },
+  "words": {
+    "Bahar": "Spring",
+    "Güz": "Fall",
+    "Yaz": "Summer",
+    "Seçmeli": "Elective",
+    "Zorunlu": "Compulsory",
+    "Türkçe": "Turkish",
+    "İngilizce": "English"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "orcid": "0000-0002-6019-6178",
+  "my_family_name": "Kaplan",
+  "my_given_initial": "A",
+  "extra_dois": [],
+  "exclude_dois": [
+    "10.17605/osf.io/2snu5",
+    "10.17605/osf.io/tvw96"
+  ],
+  "exclude_openalex_ids": [
+    "W7132155930"
+  ],
+  "scholar_author_id": "CrA7_KcAAAAJ",
+  "keywords": {
+    "_help": "hide: never show these. merge: 'shown as' -> list of variants. add: extra keywords per paper (title start or DOI).",
+    "hide": [
+      "nurses"
+    ],
+    "merge": {
+      "workplace violence": [
+        "violence against nurses"
+      ]
+    },
+    "add": {
+      "COVID-19 Pandemi Sürecinde": [
+        "COVID-19",
+        "mental health",
+        "psychological effects"
+      ]
+    },
+    "max_per_paper": 4
+  },
+  "avesis_profile": "https://avesis.comu.edu.tr/alikaplan",
+  "institution": "Çanakkale Onsekiz Mart University"
+}
