@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22",
+ "updated": "2026-11-23",
  "orcid": "0000-0002-6019-6178",
  "works": [
   {
@@ -419,12 +419,12 @@
    "issue": "2",
    "pages": "273-283",
    "oa_url": "https://jag.journalagent.com/z4/download_fulltext.asp?pdir=shyd&plng=tur&un=SHYD-94557",
-   "citations": 6,
+   "citations": 7,
    "citations_by_year": {
     "2026": 1,
     "2024": 3,
     "2023": 1,
-    "2022": 1
+    "2022": 2
    },
    "keywords": [
     "nursing internship",
@@ -457,7 +457,7 @@
    "2026": 18
   },
   "unmatched": [],
-  "fetched": "2026-11-22"
+  "fetched": "2026-11-23"
  },
- "scholar_updated": "2026-11-22"
+ "scholar_updated": "2026-11-23"
 }
